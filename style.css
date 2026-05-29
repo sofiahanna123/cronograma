@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 
 :root {
-  --cor-de-fundo: #1e1e1e;
-  --verde: #6fff57;
+  --cor-de-fundo: #00d9ffb4;
+  --verde: #578cff;
   --branco: #ffffff;
-  --botao-ativo: #3a375e;
-  --botao-inativo: rgba(58, 55, 94, 0.5);
-  --texto-fundo: rgba(58, 55, 94, 0.3);
+  --botao-ativo: #92f8ff;
+  --botao-inativo: rgba(255, 255, 255, 0.5);
+  --texto-fundo: rgba(108, 160, 255, 0.589);
 }
 
 body {
@@ -62,42 +62,16 @@ body {
   .botoes {
     display: flex;
   }
-  @media screen and (min-width: 768px) {
-  /* Código omitido */
-
-  .botao:first-child {
+    .botao:first-child {
     border-radius: 40px 0 0 0;
   }
-}
-@media screen and (min-width: 768px) {
-  /* Código omitido */
-
-  .botao:last-child {
+    .botao:last-child {
     border-radius: 0 40px 0 0;
   }
 }
-
-  .botao:last-child {
-    border-radius: 0 40px 0 0;
-  }
-}
-
 .ativo {
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
-}
-.abas-textos {
-  background-color: var(--texto-fundo);
-  padding: 40px;
-  border-radius: 0 0 40px 40px;
-}.abas-textos {
-  background-color: var(--texto-fundo);
-  padding: 40px;
-  border-radius: 0 0 40px 40px;
-}.abas-textos {
-  background-color: var(--texto-fundo);
-  padding: 40px;
-  border-radius: 0 0 40px 40px;
 }
 .abas-textos {
   background-color: var(--texto-fundo);
@@ -111,10 +85,8 @@ body {
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
 }
-
-}
-.aba-conteudo {
-  display: none;
+.aba-conteudo.ativo {
+  display: block;
 }
 .aba-conteudo-titulo-principal {
   font-size: 28px;
@@ -124,4 +96,7 @@ body {
   text-align: center;
   color: var(--verde);
   text-transform: uppercase;
+}
+.aba-conteudo {
+  display: none;
 }
